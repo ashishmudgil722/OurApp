@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OurApp</title>
+    <link rel="stylesheet" href="../public/home.css">
+</head>
+<body>
+    <nav id = 'navbar'>
+        <li id="logo">OurApp</li>
+        <button id="btn3">Search</button>
+        <button id=btn4>Chat</button>
+        <button id="btn5">
+            <img src="../public/profileimg1.png" alt="Upload">
+        </button>
+        <button id="btn6">Create Post</button>
+        <button id='btn1'>Sign Out</button>
+    </nav>
+
+    <div id="profile">
+        <div id='logo2'>
+            <img src="profileimg.png" alt="">
+            <h1>userourapp</h1>
+            <button id="btn9" onclick="run()" >Follow</button>
+            <button id="btn10" onclick="run()" >UnFollow</button>
+        </div>
+        <div id='profile-content'>
+            <li><a href="/">Posts: 0</a></li>
+            <li><a href="/">Followers: 0</a></li>
+            <li><a href="/">Following: 0</a></li>
+        </div>
+    </div>
+    <div id="posts">
+
+    </div>
+
+    <hr>
+    <footer id="footer">
+        Copyright @ 2021 OurApp . All rights reserved
+    </footer>
+
+    <script>
+        function run(){
+            let btn9 = document.getElementById('btn9');
+            let btn10 = document.getElementById('btn10');
+            if(btn9.style.display !='none'){
+                btn9.style.display ='none';
+                btn10.style.display ='block';
+            }
+            else{
+                btn9.style.display = 'block';
+                btn10.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
